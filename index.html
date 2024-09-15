@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Definição do conjunto de caracteres para garantir a correta exibição de caracteres especiais -->
+    <meta charset="UTF-8">
+    <!-- Configuração da visualização para dispositivos móveis, ajustando a escala da página -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página que aparece na aba do navegador -->
+    <title>Meu Primeiro Site</title>
+    <!-- Link para o arquivo de estilo CSS que define o visual do site -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho do site, geralmente contém a navegação principal -->
+    <header>
+        <nav>
+            <!-- Lista de itens de navegação -->
+            <ul>
+                <!-- Cada item de navegação é um link para uma seção específica da página -->
+                <li><a href="#home">Início</a></li>
+                <li><a href="#video">Vídeo</a></li>
+                <li><a href="#localizacao">Localização</a></li>
+                <li><a href="#imagem">Imagem</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção do site com id "home", que pode ser referenciado pelos links de navegação -->
+    <section id="home">
+        <!-- Título principal da seção -->
+        <h1>Bem-vindo ao meu primeiro site!</h1>
+        <!-- Subtítulo com uma breve descrição -->
+        <h3>Aqui estou praticando a utilização de atributos, inserindo vídeos, imagens e localização. Além de praticar CSS e JavaScript.</h3>
+    </section>
+
+    <!-- Seção do site com id "video" -->
+    <section id="video">
+        <!-- Título da seção -->
+        <h2>Vídeo</h2>
+        <!-- Contêiner para o vídeo -->
+        <div class="video-container">
+            <!-- Embedding de um vídeo do YouTube usando um iframe -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tJugko3iO0o?si=uyVdCp_SEVhWrRZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Seção do site com id "localizacao" -->
+    <section id="localizacao">
+        <!-- Título da seção -->
+        <h2>Localização</h2>
+        <!-- Contêiner para o mapa -->
+        <div class="map-container">
+            <!-- Embedding de um mapa do Google Maps usando um iframe -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3536.0668793191176!2d-48.553152124536844!3d-27.591456076249177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952739f4ae7bd09d%3A0x2a330578f0c05c4b!2sUniCesumar%20FLORIAN%C3%93POLIS!5e0!3m2!1spt-BR!2sbr!4v1722620735575!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+    </section>
+
+    <!-- Seção do site com id "imagem" -->
+    <section id="imagem">
+        <!-- Título da seção -->
+        <h2>Imagem</h2>
+        <!-- Imagem inserida na seção -->
+        <img src="unicesumar.png" alt="Imagem de exemplo">
+    </section>
+
+    <!-- Seção do site com id "contato" -->
+    <section id="contato">
+        <!-- Título da seção -->
+        <h2>Contato</h2>
+        <!-- Texto com um link para enviar um e-mail -->
+        <p>Entre em contato pelo e-mail <a href="mailto:contato.ingrid@gmail.com">contato.ingrid@gmail.com</a>. Ou preencha o formulário abaixo.</p>
+    
+        <!-- Formulário de contato -->
+        <form action="mailto:contato@exemplo.com" method="post" enctype="text/plain">
+            <!-- Campo para o nome do remetente -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+    
+            <!-- Campo para o e-mail do remetente -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <!-- Campo para o assunto da mensagem -->
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" required><br><br>
+    
+            <!-- Campo para a mensagem -->
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+    
+            <!-- Opções para selecionar se é pessoa física ou jurídica -->
+            <fieldset>
+                <legend>Tipo de Pessoa:</legend>
+                <label>
+                    <input type="radio" name="tipo_pessoa" value="fisica" required>
+                    Pessoa Física
+                </label><br>
+                <label>
+                    <input type="radio" name="tipo_pessoa" value="juridica">
+                    Pessoa Jurídica
+                </label>
+            </fieldset><br>
+    
+            <!-- Botão de envio do formulário -->
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <!-- Rodapé do site com informações de direitos autorais -->
+    <footer>
+        <p>&copy; 2024 Meu Primeiro Site</p>
+    </footer>
+
+    <!-- Link para o arquivo JavaScript que pode adicionar interatividade ao site -->
+    <script src="script.js"></script>
+
+</body>
+</html>

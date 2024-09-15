@@ -1,0 +1,80 @@
+/* Define a aparência geral do corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do texto */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    background-color: #ffebf0; /* Define a cor de fundo */
+}
+
+/* Define a aparência do cabeçalho */
+header {
+    background-color: #4c11ed; /* Define a cor de fundo do cabeçalho */
+    padding: 1em 0; /* Define o preenchimento superior e inferior do cabeçalho */
+    text-align: center; /* Centraliza o texto no cabeçalho */
+}
+
+/* Remove o estilo padrão das listas não ordenadas dentro da navegação */
+nav ul {
+    list-style-type: none; /* Remove os marcadores das listas */
+    padding: 0; /* Remove o preenchimento padrão */
+}
+
+/* Define a aparência dos itens da lista dentro da navegação */
+nav ul li {
+    display: inline; /* Exibe os itens da lista em linha */
+    margin: 0 1em; /* Define a margem lateral entre os itens da lista */
+}
+
+/* Define a aparência dos links dentro dos itens da lista na navegação */
+nav ul li a {
+    text-decoration: none; /* Remove a sublinha dos links */
+    color: #ffebf0; /* Define a cor do texto dos links */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+}
+
+/* Define a aparência das seções */
+section {
+    padding: 2em; /* Define o preenchimento ao redor da seção */
+    text-align: center; /* Centraliza o texto dentro da seção */
+}
+
+/* Define a aparência do contêiner de vídeo */
+.video-container {
+    margin: 0 auto; /* Centraliza o contêiner de vídeo horizontalmente */
+    max-width: 800px; /* Define a largura máxima do contêiner de vídeo */
+}
+
+/* Define a aparência do iframe dentro do contêiner de vídeo */
+.video-container iframe {
+    width: 100%; /* Define a largura do iframe para ocupar 100% do contêiner */
+    height: 450px; /* Define a altura do iframe */
+}
+
+/* Define a aparência do contêiner de mapa */
+.map-container {
+    margin: 0 auto; /* Centraliza o contêiner de mapa horizontalmente */
+    max-width: 800px; /* Define a largura máxima do contêiner de mapa */
+}
+
+/* Define a aparência do iframe dentro do contêiner de mapa */
+.map-container iframe {
+    width: 100%; /* Define a largura do iframe para ocupar 100% do contêiner */
+    height: 450px; /* Define a altura do iframe */
+}
+
+/* Define a aparência das imagens */
+img {
+    max-width: 50%; /* Define a largura máxima da imagem como 50% do contêiner */
+    height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+    border-radius: 8px; /* Define bordas arredondadas para a imagem */
+}
+
+/* Define a aparência do rodapé */
+footer {
+    background-color: #ffebf0; /* Define a cor de fundo do rodapé */
+    text-align: center; /* Centraliza o texto no rodapé */
+    padding: 1em 0; /* Define o preenchimento superior e inferior do rodapé */
+    position: relative; /* Define a posição como relativa */
+    width: 100%; /* Define a largura do rodapé como 100% */
+    bottom: 0; /* Posiciona o rodapé no fundo */
+}
